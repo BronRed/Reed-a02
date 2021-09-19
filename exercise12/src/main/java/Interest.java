@@ -21,7 +21,10 @@ class Interest {
     public void print() {
         //calculates A using A = P(1 + rt) and rounds to the nearest $0.01
         //print relevant data ("After x years at y% the investment will be worth $z")
-        int amount = (int) Math.round(principal * (1 + rateOfInterest * numYears * 0.01));
-        System.out.println("After " + numYears + " years at " + rateOfInterest + "%, the investment will be worth $" + amount + ".");
+        //double amount3 = principal*Math.pow(1+((rateOfInterest*0.01)/compoundPerYear),compoundPerYear*numYears);
+        //int amount =(int) Math.round(principal * (1 + rateOfInterest * numYears * 0.01));
+        double amount = principal*(1+(rateOfInterest*numYears*0.01));
+        System.out.print("After " + numYears + " years at " + rateOfInterest + "%, the investment will be worth ");
+        System.out.printf("$%.2f.", amount);
     }
 }
