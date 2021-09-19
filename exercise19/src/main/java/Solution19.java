@@ -21,9 +21,9 @@ public class Solution19 {
         //if numerical, store value and continue
         //repeat process with height in inches
         Scanner sc = new Scanner(System.in);
-        System.out.print("What is your weight is lbs? ");
+        System.out.print("What is your weight in lbs? ");
         while(!sc.hasNextDouble()) {
-            System.out.print("What is your weight is lbs? ");
+            System.out.print("What is your weight in lbs? ");
             sc.next();
         }
         weight = sc.nextDouble();
